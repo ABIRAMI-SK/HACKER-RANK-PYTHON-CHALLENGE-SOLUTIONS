@@ -1,0 +1,4 @@
+from itertools import combinations
+S, k = input().split()
+for size in range(int(k)):
+    print(*map("".join,combinations(sorted(S), size+1)),sep="\n")
